@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    {% block header %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 
+      - primary meta tags
+    -->
+   
+    <meta name="title" content="Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.">
+    <meta name="description" content="This is a blog html template made by codewithsadee">
+  
+  
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+    
+    {% endblock %}
+
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+    
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
